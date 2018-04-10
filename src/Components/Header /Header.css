@@ -1,0 +1,63 @@
+.header {
+  height: 100vh;
+}
+
+.line{
+  width:35vw;
+  height:1px;
+  background-color: rgb(0, 179, 255);
+  margin: auto;
+  margin-bottom: 3%;
+  box-shadow: 0px 0px 10px rgba(0, 187, 255, 0.5);
+}
+
+#float-logo{
+  height: 25vw !important;
+  margin-top: 5%;
+  margin-left: 3vw;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+.social-icons {
+  font-size: 40px;
+  padding: 5px;
+}
+
+.yt {
+  color: rgba(255, 0, 0, 0.961);
+}
+
+.fb {
+  color: #3b5998;
+}
+
+.ig {
+  background-image: linear-gradient(-135deg,#1400c8,#b900b4,#f50000);
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.description {
+  width: 35vw;
+  margin: auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+@media (max-width: 768px){
+  #float-logo {
+    margin-top: 10vh;
+    height: 40vw;
+  }
+
+  .description {
+    width: 60vw;
+  }
+
+}
