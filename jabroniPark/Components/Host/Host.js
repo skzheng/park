@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, TextInput, Button, View } from 'react-native';
+import { StyleSheet, Text, TextInput, Button, View, Picker} from 'react-native';
 import fire from '../../Firebase/firebase';
 
 export default class Host extends React.Component {
@@ -36,7 +36,10 @@ export default class Host extends React.Component {
 
   handlePost = () => {
     console.log(this.state);
-    fire.database().ref()
+    let spot = this.state;
+    fire.database().ref('hostspots').push(spot).then(added => {
+      console.log(added);
+    })
   }
 
   render() {
@@ -68,6 +71,13 @@ export default class Host extends React.Component {
           placeholder="Enter price"
           onChangeText={this.handlePrice}
         />
+        <Picker
+  selectedValue={this.state.language}
+  style={{ height: 50, width: 100 }}
+  onValueChange={(itemValue, itemIndex) => this.setState({language: itemValue})}>
+  <Picker.Item label="Java" value="java" />
+  <Picker.Item label="JavaScript" value="js" />
+</Picker>
         <Button
           style={{width: 150, borderRadius: 15}}
           title="Confirm"

@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import { Menu, Icon , Button } from 'antd';
+import { Menu, Icon , Button, Row } from 'antd';
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
@@ -41,6 +41,10 @@ class Navbar extends React.Component {
         className="navbar"
       >
         <Menu.Item key="home">
+          {/* <img className="logo" src="/assets/pwmlogo.png"/> */}
+          Park With Me
+        </Menu.Item>
+        <Menu.Item key="home">
           <Icon type="home" />Home
         </Menu.Item>
         <Menu.Item key="app">
@@ -49,11 +53,14 @@ class Navbar extends React.Component {
         <Menu.Item key="team">
           <Icon type="team" />Team
         </Menu.Item>
-        <Menu.Item key="workshops">
-          <Icon type="shop" />Workshops
-        </Menu.Item>
         <Menu.Item key="contact">
           <Icon type="contacts" />Contact
+        </Menu.Item>
+        <Menu.Item key="signin" className="nav-button">
+
+          <Button>Sign In</Button>
+          <Button>Sign Up</Button>
+
         </Menu.Item>
       </Menu>
     )
