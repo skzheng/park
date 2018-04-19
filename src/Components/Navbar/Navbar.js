@@ -40,21 +40,21 @@ class Navbar extends React.Component {
         mode="horizontal"
         className="navbar"
       >
-        <Menu.Item key="logo">
+        <Menu.Item key="logo" className="logo">
           {/* <img className="logo" src="/assets/pwmlogo.png"/> */}
-          <i class="fas fa-car"></i> Park With Me
+          <i className="fas fa-car"></i>Park With Me
         </Menu.Item>
         <Menu.Item key="home">
-          <Icon type="home" />Home
+          Home
         </Menu.Item>
         <Menu.Item key="app">
-          <Icon type="appstore" />About
+          About
         </Menu.Item>
         <Menu.Item key="team">
-          <Icon type="team" />Team
+          Team
         </Menu.Item>
         <Menu.Item key="contact">
-          <Icon type="contacts" />Contact
+          Contact
         </Menu.Item>
         <Menu.Item key="signin" className="nav-button">
 
