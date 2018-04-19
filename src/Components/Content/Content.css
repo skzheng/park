@@ -49,6 +49,10 @@
   margin-left: 1rem;
 }
 
+.user {
+  background-color: white;
+}
+
 .user, .user-benefits {
   width: 50vw;
   height: 100vh;
@@ -71,6 +75,7 @@
 }
 
 .host {
+  background-color: white;
   width: 50vw;
   height: 100vh;
   display: flex;
